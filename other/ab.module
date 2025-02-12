@@ -1,0 +1,8 @@
+#!name=Reels App
+#!desc= ---
+
+[MITM]
+hostname = %APPEND% admin-ops-api.airbrush.com
+
+[Script]
+ra_response = type=http-response,pattern=^https:\/\/admin\-ops\-api\.airbrush\.com\/v1\/entitlement\/list\?abcodes=[^&]+(&.*)?,requires-body=1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/ErfanM98/Shadowrocket-ad_block-rules/main/other/ab.js
