@@ -1,0 +1,8 @@
+#!name=Radio Premium?
+#!desc= Remove ads 
+
+[MITM]
+hostname = %APPEND% fontstory.org
+
+[Script]
+fonta_response = type=http-response,pattern=^https:\/\/fontstory\.org\/essentials\/ios-core-data\.json,requires-body=1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/ErfanM98/Shadowrocket-ad_block-rules/main/fonta/fonta.js
