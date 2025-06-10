@@ -42,6 +42,10 @@ obj['subscription'] = true;
         if (service == "app_config") {
 
             obj['config']["ads"] = {};
+            
+            if(obj['config']['overlay']['link']['type'] =='subscription'){
+                obj['config']['overlay'] = {};
+            }
 
         }
         bodystr = JSON.stringify(obj);
